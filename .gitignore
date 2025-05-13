@@ -1,9 +1,12 @@
-HELP.md
-target/
-!src/.mvn/wrapper/maven-wrapper.jar
+# Ignore arquivos de build
+/target/
 !**/src/main/**/target/
 !**/src/test/**/target/
 
+# Ignore arquivos compilados
+*.class
+
+# Ignore arquivos temporários da IDE
 ### STS ###
 .apt_generated
 .classpath
@@ -31,3 +34,6 @@ build/
 
 ### VS Code ###
 .vscode/
+
+# Outros arquivos a ignorar
+HELP.md
