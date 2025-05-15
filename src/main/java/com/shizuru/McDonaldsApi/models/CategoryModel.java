@@ -21,6 +21,8 @@ public class CategoryModel implements Serializable {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private UUID categoryId;
     private String categoryName;
+    @Column(name = "image_url")
+    private String imageUrl;
     @OneToMany(mappedBy = "category")
     private List<ProductModel> products;
 
